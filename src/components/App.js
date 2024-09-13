@@ -3,17 +3,17 @@ import "./../styles/App.css";
 import WeatherDisplay from "./WeatherDisplay";
 
 const App = () => {
-  const [temp, setTemp] = useState(0);
-  const [cond, setCond] = useState("");
+  const [temperature, setTemperature] = useState(0);
+  const [conditions, setConditions] = useState("");
 
   useEffect(() => {
-    setTemp(25);
-    setCond("Sunny");
+    setTemperature(25);
+    setConditions("Sunny");
   }, []);
   return (
     <div>
       {/* Do not remove the main div */}
-      <WeatherDisplay temp={temp} cond={cond} />
+      <WeatherDisplay temperature={temperature} conditions={conditions} />
     </div>
   );
 };

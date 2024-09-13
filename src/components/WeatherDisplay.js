@@ -1,11 +1,13 @@
 import React from "react";
 
-const WeatherDisplay = ({ temp, cond }) => {
+const WeatherDisplay = ({ temperature, conditions }) => {
   return (
     <>
       <p>
         Temperature:{" "}
-        <span style={{ color: temp > 20 ? "red" : "blue" }}>{temp}</span>
+        <span style={{ color: temperature > 20 ? "red" : "blue" }}>
+          {temperature}
+        </span>
       </p>
     </>
   );
